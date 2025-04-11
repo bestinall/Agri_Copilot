@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriCopilot – Your Smart Farming Partner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>🌿 AgriCopilot</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="#ask">Ask AI</a></li>
+      <li><a href="https://your-streamlit-app-url" target="_blank">Try Simulator</a></li>
+    </ul>
+  </nav>
+
+  <!-- Intro Section -->
+  <section class="intro">
+    <img src="assets/agri-logo.png.webp" alt="AgriCopilot Logo" class="logo">
+    <h1>Welcome to AgriCopilot 🌿</h1>
+    <p>Your Smart Farming Partner – powered by AI</p>
+    <button onclick="goToFeatures()">Explore Features</button>
+  </section>
+
+  <!-- Ask AI Section -->
+  <section id="ask" class="ask-ai">
+    <h2>Ask AI 🤖</h2>
+    <p>Ask anything about your farm, crops or sustainability.</p>
+    <input type="text" id="questionInput" placeholder="e.g. What crop should I grow this season?" />
+    <button onclick="handleAsk()">Ask</button>
+    <p id="ai-response"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 AgriCopilot — All rights reserved. | Privacy · Contact
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

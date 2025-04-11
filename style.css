@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F6F5ED;
+  color: #212121;
+}
+
+nav {
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2E7D32;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #2E7D32;
+}
+
+.intro {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #e3fce3, #f6f5ed);
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2E7D32;
+  margin: 1rem 0;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.intro .logo {
+  width: 120px;
+  height: auto;
+}
+
+.intro button {
+  background: #2E7D32;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #2E7D32;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.ask-ai {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #e7fce7;
+}
+
+.ask-ai input {
+  width: 80%;
+  max-width: 400px;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.ask-ai button {
+  background: #2E7D32;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ask-ai p#ai-response {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+.plan-output {
+  background-color: #f8fff8;
+  border: 2px solid #cde4cd;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #2d2d2d;
+  max-width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ai-reco {
+  background-color: #f0f8ff;
+  border-left: 4px solid #3a8bb0;
+  padding: 10px;
+  margin: 10px 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriCopilot – Advisor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <h1>🌿 AgriCopilot</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="index.html#ask">Ask AI</a></li>
+    </ul>
+  </nav>
+
+  <section class="intro" style="text-align: center;">
+    <h1>Get Your Personalized Crop Plan</h1>
+    <p>Enter your location and select a farming goal to get AI-generated recommendations.</p>
+
+    <form onsubmit="generatePlan(); return false;">
+      <input type="text" id="place" placeholder="Enter location (e.g., Pune)" required />
+      <select id="goal">
+        <option value="profit">Profit</option>
+        <option value="sustainability">Sustainability</option>
+        <option value="balanced">Balanced</option>
+      </select>
+      <br><br>
+      <button type="submit">Generate Plan</button>
+    </form>
+
+    <div id="result" style="text-align: left; padding: 2rem; white-space: pre-wrap;"></div>
+  </section>
+
+  <footer>
+    © 2025 AgriCopilot — All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
